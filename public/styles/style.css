@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper .left, 
+.wrapper .right {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather {
+    background: url(../images/weather.jpg);
+    background-position: left;
+}
+
+.smog {
+    background: url(../images/smog.jpg);
+    background-position: right;
+}
+
+.wrapper .image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(75%);
+    transition: filter .3s ease;
+}
+
+.wrapper .caption {
+    position: relative;
+    z-index: 10;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.wrapper .caption h1 {
+    color:black;
+    margin-bottom: 25px;
+}
+
+.wrapper .caption .btn {
+    background-color: black;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.wrapper .caption .btn:hover {
+    color: #88601b;
+    transition: 0.25s ease all;
+}
+
+.wrapper .side:hover .image {
+    filter: brightness(100%);
+    transition: filter .3s ease;
+}
+
+@media(max-width: 768px) {
+    .wrapper {
+        display: block;
+    }
+
+    .wrapper .left, .wrapper .right  {
+        width: 100%;
+        height: 50vh;
+    }
+    
+}

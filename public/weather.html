@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="../styles/style-weather.css"> 
+    <script defer src="./scripts/weather-app.js"></script>
+    <title>Check Weather</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper-weather">
+        <div class="dashboard">
+            <div class="img-wrapper">
+                
+            </div>
+            <h2 class="location">Enter a Location</h2>
+            <img src="http://openweathermap.org/img/wn/03d@2x.png" class="weather-img" alt="">
+            <h1 class="temp"> - </h1>
+            <div class="min-max-temp">
+                <h4 class="max-temp">-</h4>
+                <h4 class="min-temp">-</h4>
+            </div>
+            <h4 class="weather-description"></h4>
+            <div class="search-wrapper">
+                <input type="text" class="text" placeholder="Enter location..."><br>
+                <button class="btn-submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

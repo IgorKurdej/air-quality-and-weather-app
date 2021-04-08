@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.wrapper-weather {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/weather.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard {
+    width: 20%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid dodgerblue;
+    position: relative;
+    background-color: rgba(19, 18, 18, 0.356);
+}
+
+.location {
+    color: #fff;
+    font-weight: bolder;
+}
+
+.temp::after,
+.min-temp::after,
+.max-temp::after {
+content: '°';
+}
+
+.weather-img {
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}
+
+.wrapper-weather h1 {
+    margin: 0;
+    
+}
+
+.min-max-temp {
+    display: flex;
+}
+
+.min-temp::before {
+    content: '/';
+}
+
+.search-wrapper {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text {
+    width: 65%;
+    height: 20px;
+    text-align: center;
+}
+
+.btn-submit {
+    width: 35%;
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+@media(max-width: 1550px) {
+    .dashboard  {
+        width: 25%;
+    }
+}
+
+@media(max-width: 1200px) {
+    .dashboard  {
+        width: 35%;
+    }
+}
+
+@media(max-width: 768px) {
+    .dashboard {
+        width: 50%;
+    }
+}
